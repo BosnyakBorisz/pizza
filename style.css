@@ -59,6 +59,37 @@ h2{
 .box1{
     background-color: #222222;
     color: white;
+    padding: 4rem;
+}
+
+#szakasz1{
+    max-width: none;
+}
+
+#szakasz2{
+    max-width: 40rem;
+}
+
+.box2{
+    background-color:black ;
+    color: white;
+}
+
+#szakasz3{
+    
+}
+
+.box2 ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+    
+}
+
+.box2 li {
+    border: 1px solid white;
+    padding: 10px 50px;
 }
 
 
