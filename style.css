@@ -101,15 +101,15 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     list-style-type: none;
-    padding: 0;
-    
+    padding: 0.5rem 0 ;
 }
 
 #box2 li {
     border: 1px solid white;
-    padding: 10px 50px;
+    padding: 12px 60px;
+    font-size: 1.2rem;
 }
 /*box2*/
 
@@ -258,7 +258,7 @@ footer{
 footer p, a, a:visited, a:link, a:active, a:hover{
     color: #d4d4d4;
     margin:0;
-    font-size: smaller;
+    font-size: small;
 }
 
 footer p:last-child{
@@ -270,4 +270,31 @@ footer hr{
     margin: 0 0 3rem 0;
 }
 /*footer*/
+/*media - xs(0-576) sm(576-768) md(768-992) lg(992-1200) */
+@media only screen and (max-width: 1000px) { /*md*/
+    .pizza_kep{
+        height: 25rem;
+    }
+    .marhapecsenye_kep{
+        height: 30rem;
+    }
+    .zoldsegsalata_kep{
+        height: 15rem;
+    }
+    .pizza2_kep{
+        height: 15rem;
+    }
+    .eloetel_kep{
+        height: 14rem;
+    }
+}
+@media only screen and (max-width: 768px) {   /*sm*/
+    .pizza_kep{
+        margin: 2rem 0;
+    }
+}
+@media only screen and (max-width: 576px) { /*xs*/
+ 
+}
+/*media*/
 
