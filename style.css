@@ -81,12 +81,12 @@ h2{
     padding: 4rem;
 }
 
-#szakasz1{
+#box1_szakasz1{
     max-width: none;
 }
 
-#szakasz2{
-    max-width: 40rem;
+#box1_szakasz2{
+    max-width: 35rem;
 }
 /*box1*/
 
@@ -103,13 +103,18 @@ h2{
     justify-content: center;
     gap: 1.5rem;
     list-style-type: none;
-    padding: 0.5rem 0 ;
+    padding: 1rem 0 ;
 }
 
 #box2 li {
     border: 1px solid white;
     padding: 12px 60px;
     font-size: 1.2rem;
+}
+
+#box2_szoveg{
+    color: #D4D4D4; 
+    margin: 1rem 10rem;
 }
 /*box2*/
 
@@ -181,8 +186,6 @@ h2{
     justify-content: center;
     align-items: end;
 }
-
-
 /*box3*/
 /*box4*/
 #box4{
@@ -204,7 +207,7 @@ h2{
 }
 
 #box4_szakasz3{
-    padding:0 2rem;
+    padding:0 2rem 0 0;
     text-align: left;
     max-width: 20rem;
 }
@@ -272,6 +275,9 @@ footer hr{
 /*footer*/
 /*media - xs(0-576) sm(576-768) md(768-992) lg(992-1200) */
 @media only screen and (max-width: 1000px) { /*md*/
+    #box2_szoveg{
+        margin: 1rem 3rem;
+    }
     .pizza_kep{
         height: 25rem;
     }
@@ -289,12 +295,30 @@ footer hr{
     }
 }
 @media only screen and (max-width: 768px) {   /*sm*/
+    #box2_szoveg{
+        margin: 1rem 1rem;
+    }
+    #box2 ul{
+        display: flex;
+    }
     .pizza_kep{
+        margin: 2rem 0;
+    }
+    .marhapecsenye_kep{
+        margin: 2rem 0;
+    }
+    .zoldsegsalata_kep{
+        margin: 2rem 0;
+    }
+    .pizza2_kep{
+        margin: 2rem 0;
+    }
+    .eloetel_kep{
         margin: 2rem 0;
     }
 }
 @media only screen and (max-width: 576px) { /*xs*/
- 
+    
 }
 /*media*/
 
