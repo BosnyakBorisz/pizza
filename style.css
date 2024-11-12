@@ -135,7 +135,7 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 30rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -147,7 +147,7 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 37rem;
+    height: 25rem;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -158,7 +158,7 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 20rem;
+    height: 14rem;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -169,7 +169,7 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 20rem;
+    height: 14rem;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -180,11 +180,48 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 17rem;
-    margin-top: 4rem;
+    height: 12rem;
     display: flex;
     justify-content: center;
     align-items: end;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(9, 5vw);
+    grid-gap: 1rem;
+}
+
+.item1{
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.item2{
+    grid-column-start: 9;
+    grid-column-end:11;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.item3{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+.item4{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+.item5{
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 7;
+    grid-row-end: 9;
 }
 /*box3*/
 /*box4*/
@@ -278,21 +315,44 @@ footer hr{
     #box2_szoveg{
         margin: 1rem 3rem;
     }
-    .pizza_kep{
-        height: 25rem;
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(9, 5vw);
+        grid-gap: 1.5rem;
     }
-    .marhapecsenye_kep{
-        height: 30rem;
+    
+    .item1{
+        grid-column-start: 2;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end: 5;
     }
-    .zoldsegsalata_kep{
-        height: 15rem;
+    .item2{
+        grid-column-start: 8;
+        grid-column-end:11 ;
+        grid-row-start: 1;
+        grid-row-end: 6;
     }
-    .pizza2_kep{
-        height: 15rem;
+    .item3{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 8;
     }
-    .eloetel_kep{
-        height: 14rem;
+    .item4{
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 6;
+        grid-row-end: 8;
     }
+    .item5{
+        grid-column-start: 8;
+        grid-column-end: 11;
+        grid-row-start: 7;
+        grid-row-end: 9;
+    }
+
 }
 @media only screen and (max-width: 768px) {   /*sm*/
     #box2_szoveg{
@@ -301,21 +361,7 @@ footer hr{
     #box2 ul{
         display: flex;
     }
-    .pizza_kep{
-        margin: 2rem 0;
-    }
-    .marhapecsenye_kep{
-        margin: 2rem 0;
-    }
-    .zoldsegsalata_kep{
-        margin: 2rem 0;
-    }
-    .pizza2_kep{
-        margin: 2rem 0;
-    }
-    .eloetel_kep{
-        margin: 2rem 0;
-    }
+
 }
 @media only screen and (max-width: 576px) { /*xs*/
     
