@@ -68,6 +68,7 @@ header h1{
     display: inline;
     font-size: 1.7rem;
     font-family: Josefin Sans;
+    margin: 0;
 }
 
 h2{
@@ -80,6 +81,7 @@ h2{
     background-color: #222222;
     color: white;
     padding: 4rem;
+    border: 1px solid #222222
 }
 
 #box1_szakasz1{
@@ -96,6 +98,7 @@ h2{
     background-color:#101010;
     color: white;
     padding: 3rem 0 ;
+    border: 1px solid #101010;
 }
 
 #box2 ul{
@@ -123,6 +126,7 @@ h2{
     background-color: #222222;
     color: white;
     padding: 3rem 0 ;
+    border: 1px solid #222222;
 }
 
 #box3 p{
@@ -219,6 +223,7 @@ h2{
     background-color: #101010;
     color: white;
     padding: 3rem 0 ;
+    border: 1px solid #101010;
 }
 
 #box4_szakasz1{
@@ -283,6 +288,7 @@ h2{
 footer{
     background-color:#101010 ;
     text-align: justify;
+    border: 1px solid #101010;
 }
 
 footer p, a, a:visited, a:link, a:active, a:hover{
@@ -488,6 +494,9 @@ footer hr{
     #box4 {
         padding: 1rem;
     }
+    #box4_szakasz1{
+        margin-top:1rem ;
+    }
     #box4_szakasz2 {
         padding: 0;
     }
@@ -498,7 +507,9 @@ footer hr{
         text-align: left;
         max-width: 23rem;
         padding-top: 1.5rem;
+        margin-bottom:2rem;
     }
+    
 }
 @media only screen and (max-width: 576px) { /*xs*/
     header{
@@ -511,7 +522,7 @@ footer hr{
         font-size: 1.2rem;
     }
     .box1 {
-        padding: 1rem;
+        padding: 1rem 0rem ;  
     }
     #box2 ul{
         flex-direction: column;
@@ -525,28 +536,28 @@ footer hr{
     }
     .grid-container{
         grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(27, 5vw);  
+        grid-template-rows: repeat(28, 5vw);  
         grid-gap: 2rem 0.5rem;
     }
     .item1{
-        grid-column: 2 / 10;
+        grid-column: 3 / 9;
         grid-row: 1 / 5;
     }
     .item2{
-        grid-column: 2 / 10;
-        grid-row: 15 / 23;
+        grid-column: 3 / 9;
+        grid-row: 15 / 24;
     }
     .item3{
-        grid-column: 2 / 10;
+        grid-column: 3 / 9;
         grid-row: 5 / 10;
     }
     .item4{
-        grid-column: 2 / 10;
+        grid-column: 3 / 9;
         grid-row: 10 / 15;
     }
     .item5{
-        grid-column: 2 / 10;
-        grid-row: 23 / 28;
+        grid-column: 3 / 9;
+        grid-row: 24 / 29;
     }
     .pizza_kep{
         width: 100%;
@@ -573,6 +584,33 @@ footer hr{
     }
     #box4_szakasz3{
         margin-bottom:2rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .grid-container{
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(29, 5vw);  
+        grid-gap: 2rem 0.5rem;
+    }
+    .item1{
+        grid-column: 2 / 10;
+        grid-row: 1 / 5;
+    }
+    .item2{
+        grid-column: 2 / 10;
+        grid-row: 15 / 25;
+    }
+    .item3{
+        grid-column: 2 / 10;
+        grid-row: 5 / 10;
+    }
+    .item4{
+        grid-column: 2 / 10;
+        grid-row: 10 / 15;
+    }
+    .item5{
+        grid-column: 2 / 10;    
+        grid-row: 25 / 30;
     }
 }
 /*media*/
