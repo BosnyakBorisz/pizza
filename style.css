@@ -277,7 +277,6 @@ h2{
 }
 
 #box4 ul li hr {
-    border: 0;
     border-top: 1px solid #ccc;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -445,31 +444,34 @@ footer hr{
         padding: 14px 55px;
         margin-bottom: 1.5rem;
     }
+    #box3 p{
+        font-size: 2rem;
+    }
     .grid-container{
         grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(32, 5vw);  
-        grid-gap: 2rem 0.5rem;
+        grid-template-rows: repeat(46, 5vw);  
+        grid-gap: 2rem 0rem;
+        margin:0 2.5rem
     }
-   
     .item1{
-        grid-column: 3 / 9;
-        grid-row: 1 / 6;
+        grid-column: 1 / 11;
+        grid-row: 1 / 8;
     }
     .item2{
-        grid-column: 3 / 9;
-        grid-row: 18 / 28;
+        grid-column: 1 / 11;
+        grid-row: 24 / 39;
     }
     .item3{
-        grid-column: 3 / 9;
-        grid-row: 6 / 12;
+        grid-column: 1 / 11;
+        grid-row: 8 / 16;
     }
     .item4{
-        grid-column: 3 / 9;
-        grid-row: 12 / 18;
+        grid-column: 1 / 11;
+        grid-row: 16 / 24;
     }
     .item5{
-        grid-column: 3 / 9;
-        grid-row: 28 / 33;
+        grid-column: 1 / 11;
+        grid-row: 39 / 47;
     }
     .pizza_kep{
         width: 100%;
@@ -534,30 +536,34 @@ footer hr{
     #box2 li:last-child{
         margin-bottom: 0;
     }
+    #box3 p{
+        font-size: 1.5rem;
+    }
     .grid-container{
         grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(28, 5vw);  
-        grid-gap: 2rem 0.5rem;
+        grid-template-rows: repeat(40, 5vw);  
+        grid-gap: 2rem 0rem;
+        margin:0 1.5rem
     }
     .item1{
-        grid-column: 3 / 9;
-        grid-row: 1 / 5;
+        grid-column: 1 / 11;
+        grid-row: 1 / 7;
     }
     .item2{
-        grid-column: 3 / 9;
-        grid-row: 15 / 24;
+        grid-column: 1 / 11;
+        grid-row: 21 / 34;
     }
     .item3{
-        grid-column: 3 / 9;
-        grid-row: 5 / 10;
+        grid-column: 1 / 11;
+        grid-row: 7 / 14;
     }
     .item4{
-        grid-column: 3 / 9;
-        grid-row: 10 / 15;
+        grid-column: 1 / 11;
+        grid-row: 14 / 21;
     }
     .item5{
-        grid-column: 3 / 9;
-        grid-row: 24 / 29;
+        grid-column: 1 / 11;
+        grid-row: 34 / 41;
     }
     .pizza_kep{
         width: 100%;
@@ -579,6 +585,9 @@ footer hr{
         width: 100%;
         height: 100%;
     }
+    #box4{
+        padding: 1.3rem;
+    }
     #box4_szakasz1{
         margin-top:1rem ;
     }
@@ -586,31 +595,32 @@ footer hr{
         margin-bottom:2rem;
     }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
     .grid-container{
         grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(29, 5vw);  
+        grid-template-rows: repeat(35, 5vw);  
         grid-gap: 2rem 0.5rem;
+        margin: 0 1rem;
     }
     .item1{
-        grid-column: 2 / 10;
-        grid-row: 1 / 5;
+        grid-column: 1 / 11;
+        grid-row: 1 / 6;
     }
     .item2{
-        grid-column: 2 / 10;
-        grid-row: 15 / 25;
+        grid-column: 1 / 11;
+        grid-row: 18 / 30;
     }
     .item3{
-        grid-column: 2 / 10;
-        grid-row: 5 / 10;
+        grid-column: 1 / 11;
+        grid-row: 6 / 12;
     }
     .item4{
-        grid-column: 2 / 10;
-        grid-row: 10 / 15;
+        grid-column: 1 / 11;
+        grid-row: 12 / 18;
     }
     .item5{
-        grid-column: 2 / 10;    
-        grid-row: 25 / 30;
+        grid-column: 1 / 11;   
+        grid-row: 30 / 36;
     }
 }
 /*media*/
