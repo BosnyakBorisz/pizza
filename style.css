@@ -252,6 +252,10 @@ h2{
     border: 1px solid #101010;
 }
 
+#box4_hosszusag{
+margin: 0 12rem;
+}
+
 #box4_szakasz1{
     padding: 0 0 0 2rem;
 }
@@ -265,7 +269,7 @@ h2{
 }
 
 #box4_szakasz3{
-    padding:0 0rem 0 0;
+    padding:0 2rem 0 0;
     text-align: left;
     max-width: 20rem;
 }
@@ -322,14 +326,21 @@ footer p, a, a:visited, a:link, a:active, a:hover{
     font-size: small;
 }
 
+footer p{
+    margin: 2.5rem 0 0 0;
+}
+
 footer p:last-child{
     margin: 0 0 3rem 0;
 }
 
 footer hr{
     color: #bfbfbf;
-    margin: 0 0 3rem 0;
+    max-width: 46rem;
+    height: 5px;
+    margin: auto;
 }
+
 /*footer*/
 /*media - xs(0-576) sm(576-768) md(768-992) lg(992-1200) xl(1200-1500)*/
 @media only screen and (max-width: 1700px){
@@ -378,20 +389,32 @@ footer hr{
     .grid-container{
         grid-gap: 1rem 2.5rem;
     }
+    #box4_hosszusag{
+        margin: 0 10rem;
+    }
 }
 @media only screen and (max-width: 1120px){
     .grid-container{
         grid-gap: 1.2rem 1.8rem;
+    }
+    #box4_hosszusag{
+        margin: 0 9rem;
     }
 }
 @media only screen and (max-width: 1050px){
     .grid-container{
         grid-gap: 1.4rem 1.5rem;
     }
+    #box4_hosszusag{
+        margin: 0 7rem;
+    }
 }
 @media only screen and (max-width: 992px) { /*md*/
     #box2_szoveg{
         margin: 1rem 3rem;
+    }
+    #box4_hosszusag{
+        margin: 0 6rem;
     }
     .grid-container{    
         grid-template-columns: repeat(11, 1fr);
@@ -419,7 +442,6 @@ footer hr{
         grid-column: 8 / 11;
         grid-row: 7 / 9;
     }
-
 }
 @media only screen and (max-width: 900px){
     .grid-container{    
@@ -594,7 +616,9 @@ footer hr{
         padding-top: 1.5rem;
         margin-bottom:2rem;
     }
-    
+    #box4 br{
+        display: none;
+    }
 }
 @media only screen and (max-width: 576px) { /*xs*/
     header{
