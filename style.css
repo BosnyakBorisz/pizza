@@ -79,11 +79,16 @@ h2{
 }
 
 /*box1*/
-.box1{
+#box1{
     background-color: #222222;
     color: white;
-    padding: 4rem;
-    border: 1px solid #222222
+    padding:3rem 0;
+    border: 1px solid #222222;
+}
+
+#box1_hosszusaga{
+    max-width: 50rem;
+    margin: auto;
 }
 
 #box1_szakasz1{
@@ -93,8 +98,11 @@ h2{
 #box1_szakasz2{
     max-width: 35rem;
 }
-/*box1*/
 
+#box1 br{
+    display: none;
+}
+/*box1*/
 /*box2*/
 #box2{
     background-color:#101010;
@@ -336,7 +344,7 @@ footer p:last-child{
 
 footer hr{
     color: #bfbfbf;
-    max-width: 46rem;
+    max-width: 60rem;
     height: 5px;
     margin: auto;
 }
@@ -375,6 +383,9 @@ footer hr{
         grid-gap: 0.6rem 2.5rem;
         margin: 0 5rem;
     }
+    footer hr{
+        max-width: 50rem;
+    }
 }
 @media only screen and (max-width: 1250px){
     #box3 p{
@@ -410,11 +421,11 @@ footer hr{
     }
 }
 @media only screen and (max-width: 992px) { /*md*/
+    #box1 br{
+        display:inherit;
+    }
     #box2_szoveg{
         margin: 1rem 3rem;
-    }
-    #box4_hosszusag{
-        margin: 0 6rem;
     }
     .grid-container{    
         grid-template-columns: repeat(11, 1fr);
@@ -442,12 +453,14 @@ footer hr{
         grid-column: 8 / 11;
         grid-row: 7 / 9;
     }
+    #box4_hosszusag{
+        margin: 0 5rem;
+    }
 }
 @media only screen and (max-width: 900px){
     .grid-container{    
         grid-gap: 1.2rem 1rem;
     }
-    
     .item1{
         grid-column: 2 / 8;
         grid-row: 1 / 5;
@@ -488,6 +501,9 @@ footer hr{
         width: 14rem;
         height: 11rem;
     }
+    #box4_hosszusag{
+        margin: 0 3.5rem;
+    }
 }
 @media only screen and (max-width: 850px){
     #box3 p{
@@ -516,11 +532,24 @@ footer hr{
         width: 13rem;
         height: 11rem;
     }
+    #box4_hosszusag{
+        margin: 0 1rem;
+    }
 }
 @media only screen and (max-width: 768px) {   /*sm*/
-    .box1 {
-        padding: 1rem;
+    #box1 {
+        padding: 1rem 0;
     }
+    #box1 br{
+        display:none;
+    }
+    #box1_szakasz1{
+        padding: 0;
+    }
+    
+    #box1_szakasz2{
+        padding: 0;
+    }   
     #valaszto{
         display: none;
     }
@@ -602,7 +631,10 @@ footer hr{
         transform: scale(1.03);
     }
     #box4 {
-        padding: 1rem;
+        padding: 0rem;
+    }
+    #box4_hosszusag{
+        margin: 0;
     }
     #box4_szakasz1{
         margin-top:1rem ;
@@ -638,10 +670,10 @@ footer hr{
         top: 50%;
         transform: translateY(-50%);
     }
-    .box1 {
+    #box1 {
         padding: 1rem 0rem ;  
     }
-    .box1 h5{
+    #box1 h5{
         max-width: 10rem;
     }
     #box2 ul{
@@ -717,9 +749,6 @@ footer hr{
     }
     .eloetel_kep:hover{
         transform: scale(1.02);
-    }
-    #box4{
-        padding: 0.7rem;
     }
     #box4_szakasz1{
         margin:1rem 0;
