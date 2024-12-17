@@ -78,6 +78,13 @@ h2{
     display: inline;
 }
 
+#fehera{
+    color: white;
+}
+
+#szurkea{
+    color: #cdc9c6;
+}
 /*box1*/
 #box1{
     background-color: #222222;
@@ -537,6 +544,14 @@ footer hr{
     }
 }
 @media only screen and (max-width: 768px) {   /*sm*/
+    #fehera{
+        color: white;
+        font-weight: 550;
+    }
+    #szurkea{
+        color: white;
+        font-weight: 550;
+    }
     #box1 {
         padding: 1rem 0;
     }
