@@ -49,10 +49,10 @@ a, a:visited, a:link, a:active, a:hover{
 
 header{
     background-image: url(img/pizzakep.jpg);
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 30rem;
+    background-position: center 30% ;
+    min-height: 25rem;
     width: 100%;
     padding:1.5rem 1rem;
     font-size: 1.2rem;
@@ -80,10 +80,12 @@ h2{
 
 #fehera{
     color: white;
+    font-weight: 400;
 }
 
 #szurkea{
-    color: #cdc9c6;
+    color: #ffffff; /*#cdc9c6*/
+    font-weight: 400;
 }
 /*box1*/
 #box1{
