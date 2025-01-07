@@ -51,7 +51,7 @@ header{
     background-image: url(img/pizzakep.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 30% ;
+    background-position:center;
     min-height: 25rem;
     width: 100%;
     padding:1.5rem 1rem;
@@ -80,13 +80,13 @@ h2{
 
 #fehera{
     color: white;
-    font-weight: 400;
+    font-weight: 550;
 }
 
 #szurkea{
     color: #cdc9c6; /*#cdc9c6*/
-    font-weight: 400;
-}
+    font-weight: 550;
+}   
 /*box1*/
 #box1{
     background-color: #222222;
